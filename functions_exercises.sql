@@ -40,8 +40,8 @@ WHERE last_name LIKE 'E%'
    OR last_name LIKE '%E';
 
 SELECT CONCAT(first_name, ' ', last_name) FROM employees
-WHERE last_name LIKE 'E%'
-  AND last_name LIKE '%E';
+WHERE last_name LIKE 'E%E';
+#   AND last_name LIKE '%E';
 
 SELECT CONCAT(first_name, ' ' , last_name), DATEDIFF(CURDATE(), hire_date) FROM employees
 WHERE (hire_date > '1990' AND hire_date < '2000')
