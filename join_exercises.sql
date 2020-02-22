@@ -47,3 +47,4 @@ FROM employees AS e
 WHERE de.to_date = '9999-01-1'
   AND dm.to_date = '9999-01-1'
 ORDER BY d.dept_name;
+
